@@ -394,7 +394,12 @@ console.log("Es 17 ",searchByTitle("lord",movies));
 /* ESERCIZIO 19
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
+function removeIndex(num,movies){
+  movies.splice(num,1)
 
+  return movies
+}
+console.log("Es 19",removeIndex(5,movies));
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
 
 /* ESERCIZIO 20
@@ -421,13 +426,16 @@ function selezionaAllTd() {
 */
 function contenutoTd() {
   let tds=document.querySelectorAll("td")
+  tds.forEach((td2)=>{
+    console.log(td2.textContent);
+  })
   
   }
    
 
   
 
- contenutoTd ("Esercizio 22")
+ contenutoTd ()
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
