@@ -279,7 +279,9 @@ console.log("es 7: oggi è ",whatDayIsIt());
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
-function howManyDays(date) {
+function howManyDays(dateOggi) {
+  const startDate= new Date(dateOggi)
+  const currentdate=new Date ()
  
 }
 
@@ -463,7 +465,7 @@ addRedBackground ();
 */
 function svuotaMyList() {
   const myList=document.getElementById("myList")
-  myList.removeChild(myList.firstChild)
+  myList.remove("li")
 
   
   
